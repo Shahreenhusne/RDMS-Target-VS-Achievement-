@@ -1,0 +1,161 @@
+E:\Salahuddin\SCM_2_0_2\DAL\bin\Debug\DAL.dll
+E:\Salahuddin\SCM_2_0_2\DAL\bin\Debug\DAL.pdb
+E:\Salahuddin\SCM_2_0_2\DAL\bin\Debug\BOL.dll
+E:\Salahuddin\SCM_2_0_2\DAL\bin\Debug\BOL.pdb
+E:\Salahuddin\SCM_2_0_2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Salahuddin\SCM_2_0_2\DAL\obj\Debug\DAL.dll
+E:\Salahuddin\SCM_2_0_2\DAL\obj\Debug\DAL.pdb
+F:\Salahuddin\SCM_2_0_2\DAL\bin\Debug\DAL.dll
+F:\Salahuddin\SCM_2_0_2\DAL\bin\Debug\DAL.pdb
+F:\Salahuddin\SCM_2_0_2\DAL\bin\Debug\BOL.dll
+F:\Salahuddin\SCM_2_0_2\DAL\bin\Debug\BOL.pdb
+F:\Salahuddin\SCM_2_0_2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\Salahuddin\SCM_2_0_2\DAL\obj\Debug\DAL.dll
+F:\Salahuddin\SCM_2_0_2\DAL\obj\Debug\DAL.pdb
+F:\Task\Concord Software Development\SCM\DAL\bin\Debug\DAL.dll
+F:\Task\Concord Software Development\SCM\DAL\bin\Debug\DAL.pdb
+F:\Task\Concord Software Development\SCM\DAL\bin\Debug\BOL.dll
+F:\Task\Concord Software Development\SCM\DAL\bin\Debug\BOL.pdb
+F:\Task\Concord Software Development\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\Task\Concord Software Development\SCM\DAL\obj\Debug\DAL.dll
+F:\Task\Concord Software Development\SCM\DAL\obj\Debug\DAL.pdb
+F:\Tushi2018\ConcordProject\ePIC\SCM\DAL\bin\Debug\DAL.dll
+F:\Tushi2018\ConcordProject\ePIC\SCM\DAL\bin\Debug\DAL.pdb
+F:\Tushi2018\ConcordProject\ePIC\SCM\DAL\bin\Debug\BOL.dll
+F:\Tushi2018\ConcordProject\ePIC\SCM\DAL\bin\Debug\BOL.pdb
+F:\Tushi2018\ConcordProject\ePIC\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\Tushi2018\ConcordProject\ePIC\SCM\DAL\obj\Debug\DAL.dll
+F:\Tushi2018\ConcordProject\ePIC\SCM\DAL\obj\Debug\DAL.pdb
+F:\Task\Concord Software Development\MIS\DAL\bin\Debug\DAL.dll
+F:\Task\Concord Software Development\MIS\DAL\bin\Debug\DAL.pdb
+F:\Task\Concord Software Development\MIS\DAL\bin\Debug\BOL.dll
+F:\Task\Concord Software Development\MIS\DAL\bin\Debug\BOL.pdb
+F:\Task\Concord Software Development\MIS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\Task\Concord Software Development\MIS\DAL\obj\Debug\DAL.dll
+F:\Task\Concord Software Development\MIS\DAL\obj\Debug\DAL.pdb
+F:\Tushi2018\ConcordProject\MIS\DAL\bin\Debug\DAL.dll
+F:\Tushi2018\ConcordProject\MIS\DAL\bin\Debug\DAL.pdb
+F:\Tushi2018\ConcordProject\MIS\DAL\bin\Debug\BOL.dll
+F:\Tushi2018\ConcordProject\MIS\DAL\bin\Debug\BOL.pdb
+F:\Tushi2018\ConcordProject\MIS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\Tushi2018\ConcordProject\MIS\DAL\obj\Debug\DAL.dll
+F:\Tushi2018\ConcordProject\MIS\DAL\obj\Debug\DAL.pdb
+E:\Concord Work\ConcordProject\MIS\DAL\bin\Debug\DAL.dll
+E:\Concord Work\ConcordProject\MIS\DAL\bin\Debug\DAL.pdb
+E:\Concord Work\ConcordProject\MIS\DAL\bin\Debug\BOL.dll
+E:\Concord Work\ConcordProject\MIS\DAL\bin\Debug\BOL.pdb
+E:\Concord Work\ConcordProject\MIS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Concord Work\ConcordProject\MIS\DAL\obj\Debug\DAL.dll
+E:\Concord Work\ConcordProject\MIS\DAL\obj\Debug\DAL.pdb
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\DAL\bin\Debug\DAL.dll
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\DAL\bin\Debug\DAL.pdb
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\DAL\bin\Debug\BOL.dll
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\DAL\bin\Debug\BOL.pdb
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\DAL\obj\Debug\DAL.dll
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\DAL\obj\Debug\DAL.pdb
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\DAL\bin\Debug\DAL.dll
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\DAL\bin\Debug\DAL.pdb
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\DAL\bin\Debug\BOL.dll
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\DAL\bin\Debug\BOL.pdb
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\DAL\obj\Debug\DAL.dll
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\DAL\obj\Debug\DAL.pdb
+D:\Office Project\MIS\DAL\bin\Debug\DAL.dll
+D:\Office Project\MIS\DAL\bin\Debug\DAL.pdb
+D:\Office Project\MIS\DAL\bin\Debug\BOL.dll
+D:\Office Project\MIS\DAL\bin\Debug\BOL.pdb
+D:\Office Project\MIS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Office Project\MIS\DAL\obj\Debug\DAL.dll
+D:\Office Project\MIS\DAL\obj\Debug\DAL.pdb
+D:\Office Project\MyERP\DAL\bin\Debug\DAL.dll
+D:\Office Project\MyERP\DAL\bin\Debug\DAL.pdb
+D:\Office Project\MyERP\DAL\bin\Debug\BOL.dll
+D:\Office Project\MyERP\DAL\bin\Debug\BOL.pdb
+D:\Office Project\MyERP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Office Project\MyERP\DAL\obj\Debug\DAL.dll
+D:\Office Project\MyERP\DAL\obj\Debug\DAL.pdb
+D:\Office Project\djkhsdfkl\MyERP\DAL\bin\Debug\DAL.dll
+D:\Office Project\djkhsdfkl\MyERP\DAL\bin\Debug\DAL.pdb
+D:\Office Project\djkhsdfkl\MyERP\DAL\bin\Debug\BOL.dll
+D:\Office Project\djkhsdfkl\MyERP\DAL\bin\Debug\BOL.pdb
+D:\Office Project\djkhsdfkl\MyERP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Office Project\djkhsdfkl\MyERP\DAL\obj\Debug\DAL.dll
+D:\Office Project\djkhsdfkl\MyERP\DAL\obj\Debug\DAL.pdb
+D:\Office Project\NUCLEUS\DAL\bin\Debug\DAL.dll
+D:\Office Project\NUCLEUS\DAL\bin\Debug\DAL.pdb
+D:\Office Project\NUCLEUS\DAL\bin\Debug\AUtilities.dll
+D:\Office Project\NUCLEUS\DAL\bin\Debug\BOL.dll
+D:\Office Project\NUCLEUS\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Office Project\NUCLEUS\DAL\bin\Debug\BOL.pdb
+D:\Office Project\NUCLEUS\DAL\bin\Debug\AUtilities.pdb
+D:\Office Project\NUCLEUS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Office Project\NUCLEUS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Office Project\NUCLEUS\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Office Project\NUCLEUS\DAL\obj\Debug\DAL.dll
+D:\Office Project\NUCLEUS\DAL\obj\Debug\DAL.pdb
+D:\office work\NUCLEUS\DAL\bin\Debug\DAL.dll
+D:\office work\NUCLEUS\DAL\bin\Debug\DAL.pdb
+D:\office work\NUCLEUS\DAL\bin\Debug\AUtilities.dll
+D:\office work\NUCLEUS\DAL\bin\Debug\BOL.dll
+D:\office work\NUCLEUS\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\office work\NUCLEUS\DAL\bin\Debug\BOL.pdb
+D:\office work\NUCLEUS\DAL\bin\Debug\AUtilities.pdb
+D:\office work\NUCLEUS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\office work\NUCLEUS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\office work\NUCLEUS\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\office work\NUCLEUS\DAL\obj\Debug\DAL.dll
+D:\office work\NUCLEUS\DAL\obj\Debug\DAL.pdb
+D:\Final-2021-05-24\NUCLEUS\DAL\bin\Debug\DAL.dll
+D:\Final-2021-05-24\NUCLEUS\DAL\bin\Debug\DAL.pdb
+D:\Final-2021-05-24\NUCLEUS\DAL\bin\Debug\AUtilities.dll
+D:\Final-2021-05-24\NUCLEUS\DAL\bin\Debug\BOL.dll
+D:\Final-2021-05-24\NUCLEUS\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Final-2021-05-24\NUCLEUS\DAL\bin\Debug\BOL.pdb
+D:\Final-2021-05-24\NUCLEUS\DAL\bin\Debug\AUtilities.pdb
+D:\Final-2021-05-24\NUCLEUS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Final-2021-05-24\NUCLEUS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Final-2021-05-24\NUCLEUS\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Final-2021-05-24\NUCLEUS\DAL\obj\Debug\DAL.dll
+D:\Final-2021-05-24\NUCLEUS\DAL\obj\Debug\DAL.pdb
+D:\Nucleus\NUCLEUS\DAL\bin\Debug\DAL.dll
+D:\Nucleus\NUCLEUS\DAL\bin\Debug\DAL.pdb
+D:\Nucleus\NUCLEUS\DAL\bin\Debug\AUtilities.dll
+D:\Nucleus\NUCLEUS\DAL\bin\Debug\BOL.dll
+D:\Nucleus\NUCLEUS\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Nucleus\NUCLEUS\DAL\bin\Debug\BOL.pdb
+D:\Nucleus\NUCLEUS\DAL\bin\Debug\AUtilities.pdb
+D:\Nucleus\NUCLEUS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Nucleus\NUCLEUS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Nucleus\NUCLEUS\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Nucleus\NUCLEUS\DAL\obj\Debug\DAL.dll
+D:\Nucleus\NUCLEUS\DAL\obj\Debug\DAL.pdb
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\bin\Debug\DAL.dll
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\bin\Debug\DAL.pdb
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\bin\Debug\BOL.dll
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\bin\Debug\BOL.pdb
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\obj\Debug\DAL.dll
+E:\Al-Amin\Concond Development\eSchool\eSchool\DAL\obj\Debug\DAL.pdb
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\DAL\obj\Debug\DAL.dll
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\DAL\obj\Debug\DAL.pdb
+C:\Users\Al-Amin\Desktop\RDMS\DAL\bin\Debug\DAL.dll
+C:\Users\Al-Amin\Desktop\RDMS\DAL\bin\Debug\DAL.pdb
+C:\Users\Al-Amin\Desktop\RDMS\DAL\bin\Debug\BOL.dll
+C:\Users\Al-Amin\Desktop\RDMS\DAL\bin\Debug\BOL.pdb
+C:\Users\Al-Amin\Desktop\RDMS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Al-Amin\Desktop\RDMS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Al-Amin\Desktop\RDMS\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Al-Amin\Desktop\RDMS\DAL\obj\Debug\DAL.dll
+C:\Users\Al-Amin\Desktop\RDMS\DAL\obj\Debug\DAL.pdb
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\DAL\bin\Debug\DAL.dll
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\DAL\bin\Debug\DAL.pdb
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\DAL\bin\Debug\BOL.dll
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\DAL\bin\Debug\BOL.pdb
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\DAL\obj\Debug\DAL.dll
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\DAL\obj\Debug\DAL.pdb
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

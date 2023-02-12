@@ -1,0 +1,8 @@
+F:\Salahuddin\SCM_2_0_2\BOL\bin\Release\BOL.dll
+F:\Salahuddin\SCM_2_0_2\BOL\bin\Release\BOL.pdb
+F:\Salahuddin\SCM_2_0_2\BOL\obj\Release\BOL.dll
+F:\Salahuddin\SCM_2_0_2\BOL\obj\Release\BOL.pdb
+F:\Task\Concord Software Development\MIS\BOL\bin\Release\BOL.dll
+F:\Task\Concord Software Development\MIS\BOL\bin\Release\BOL.pdb
+F:\Task\Concord Software Development\MIS\BOL\obj\Release\BOL.dll
+F:\Task\Concord Software Development\MIS\BOL\obj\Release\BOL.pdb

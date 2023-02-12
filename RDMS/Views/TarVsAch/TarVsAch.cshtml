@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "TargetVsAchievement";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="box">
+        <div class="box-body">
+            <form id="frmvalidation">
+                <input type="hidden" id="hdnUserId" value=@Request.RequestContext.HttpContext.Session["UserID"]>
+                <div class="row">
+                    <div class="col-sm-4">
+                       <button type="button" class="btn btn-primary pull-left btn-sm " id="btnPreview" name="btnPreview">Preview</button>
+                    </div>
+                    <div class="col-sm-2 pull-right">
+                        <div class="input-group date">
+                            <input type="text" class="form-control input-sm" id="datePicker" disabled>
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-4" style="padding-top: 8px">
+                        <label id="btnCompanyName" style="color: blue; cursor: pointer; text-decoration: underline ">Company Name:</label>
+                        <select id="cmbCompanyName" class="form-control input-sm" style="width:100%"></select>
+                    </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4" style="padding-top: 8px">
+                        <label id="btnYear" style="color: blue; cursor: pointer; width: 100%; text-decoration: underline">Year:</label>
+                        <select id="cmbYear" class="form-control input-sm" style="width:100%"></select> 
+                    </div>
+                </div>
+              
+                <div class="row" style="padding-top: 8px">
+                    <div class="col-sm-4">
+                        <label id="btnTargetType" style="color: blue; cursor: pointer; text-decoration: underline ">Target Type:</label>
+                        <select name="ProviderList" id="cmbTargetType" class="form-control input-sm" placeholder="Target" style="width:100%" required></select>
+                    </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-2" style="padding-right: 0px">
+                        <label id="btnEmployee" style="color: blue; cursor: pointer; text-decoration: underline">Employee:</label>
+                        <input class="form-control input-sm" type="text" id="txtEmployee" placeholder="Select All"/>
+                    </div>
+                    <div class="col-sm-2" style="padding-left: 0px; padding-top: 4.5px ">
+                        <label></label>
+                        <select class="form-control input-sm" name="Employee" id="cmbEmployee" placeholder="Employee" style="width:100%"></select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="content" id="tblTarVsAchFull" style="display: none">
+    <div class="panel panel-violet">
+        <div class="panel-heading panel-heading-custom " style="background-color: #bf8abe">
+            Target Vs Achievement
+            <button type="button" class="btn btn-sm pull-right" id="btnPrint">Print</button>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body no-padding">
+            <table class="table table-condensed cell-border" id="tblTarVsAch" style="font-size: 11px; width: 100%">
+                <thead>
+                    <tr>
+                        <th rowspan="2">SL</th>
+                        <th rowspan="2">Employee Name</th>
+                        <th rowspan="2">Designation</th>
+                        <th colspan="2">Jan</th>
+                        <th colspan="2">Feb</th>
+                        <th colspan="2">Mar</th>
+                        <th colspan="2">Apr</th>
+                        <th colspan="2">May</th>
+                        <th colspan="2">Jun</th>
+                        <th colspan="2">Jul</th>
+                        <th colspan="2">Aug</th>
+                        <th colspan="2">Sep</th>
+                        <th colspan="2">Oct</th>
+                        <th colspan="2">Nov</th>
+                        <th colspan="2">Dec</th>
+                        <th rowspan="2">EmployeeId</th>
+                    </tr>
+                    <tr>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+                        <th>Tar</th>
+                        <th>Ach</th>
+
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="content" id="tblAchDetailsFull" style="display: none">
+    <div class="panel panel-violet">
+        <div class="panel-heading panel-heading-custom " style="text-align: center ; font-size:large">
+            Achievement Details
+        </div>
+        <!-- /.box-header -->
+        <label id="lblId"></label>
+        <label id="lblName"></label>
+        <label id="lblDeg"></label>
+
+        <div class="box-body no-padding">
+            <table class="table table-condensed cell-border" id="tblAchDetails" style="font-size: 11px; width: 100%">
+                <thead>
+                    <tr>
+                        <th>SL</th>
+                        <th>Chalan Number</th>
+                        <th>Chalan Date</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/TarVSAche/TVC.V.0.0.0.1.js")
+}
+

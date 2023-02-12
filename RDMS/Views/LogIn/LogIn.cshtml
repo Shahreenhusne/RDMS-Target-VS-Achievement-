@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "LogIn";
+    Layout = "~/Views/Shared/_LayoutLogIn.cshtml";
+}
+
+<script type="text/javascript">
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+    sessionStorage.clear();
+</script>
+
+
+<section class="content">
+    <div id="loginbox" style="margin-top: 125px;" class="mainbox col-md-5 col-md-offset-3 col-sm-4 col-sm-offset-4">
+        <div class="panel panel-info" style="border-color: #9351AD;">
+            <div class="panel-heading panel-heading-login-custom">
+                <div class="panel-title">Sign In</div>
+            </div>
+
+            <div style="padding-top: 7px;" class="panel-body">
+
+                <div style="display: none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                <div>
+                    <label id="lblMessage" style="color: red;font-style: italic">
+                    </label>
+                </div>
+
+
+                <div style="margin-bottom: 7px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" id="txtUserName" class="form-control input-lg" placeholder="User Name" autocomplete="off" required />
+                </div>
+
+                <div style="margin-bottom: 7px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    <input type="password" id="txtPassword" class="form-control input-lg" placeholder="Password" autocomplete="off" required />
+                </div>
+
+                <div class="input-group">
+                    <!-- Button -->
+                    <div style="margin: 0 0 0 0px;" class="col-sm-12 controls input-group">
+                        <span style="border-radius: 0px" class="input-group-addon"><i class="fa fa-sign-in"></i></span>
+                        <button name="Login" value="Login" id="btnLogin" class="btn btn-success btn-lg col-lg-12">Login</button>
+                    </div>
+                    <div style="margin: 0 0 0 0px;" class="col-sm-12 controls input-group">
+                        <label text="" id="lblTerminalID"> </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/LogIn/LogIn.js")
+}
+

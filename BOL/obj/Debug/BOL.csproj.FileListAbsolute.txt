@@ -1,0 +1,94 @@
+E:\Salahuddin\SCM_2_0_2\BOL\bin\Debug\BOL.dll
+E:\Salahuddin\SCM_2_0_2\BOL\bin\Debug\BOL.pdb
+E:\Salahuddin\SCM_2_0_2\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+E:\Salahuddin\SCM_2_0_2\BOL\obj\Debug\BOL.dll
+E:\Salahuddin\SCM_2_0_2\BOL\obj\Debug\BOL.pdb
+F:\Salahuddin\SCM_2_0_2\BOL\bin\Debug\BOL.dll
+F:\Salahuddin\SCM_2_0_2\BOL\bin\Debug\BOL.pdb
+F:\Salahuddin\SCM_2_0_2\BOL\obj\Debug\BOL.dll
+F:\Salahuddin\SCM_2_0_2\BOL\obj\Debug\BOL.pdb
+F:\Salahuddin\SCM_2_0_2\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+F:\Task\Concord Software Development\SCM\BOL\bin\Debug\BOL.dll
+F:\Task\Concord Software Development\SCM\BOL\bin\Debug\BOL.pdb
+F:\Task\Concord Software Development\SCM\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+F:\Task\Concord Software Development\SCM\BOL\obj\Debug\BOL.dll
+F:\Task\Concord Software Development\SCM\BOL\obj\Debug\BOL.pdb
+F:\Tushi2018\ConcordProject\ePIC\SCM\BOL\bin\Debug\BOL.dll
+F:\Tushi2018\ConcordProject\ePIC\SCM\BOL\bin\Debug\BOL.pdb
+F:\Tushi2018\ConcordProject\ePIC\SCM\BOL\obj\Debug\BOL.dll
+F:\Tushi2018\ConcordProject\ePIC\SCM\BOL\obj\Debug\BOL.pdb
+F:\Tushi2018\ConcordProject\MIS\BOL\bin\Debug\BOL.dll
+F:\Tushi2018\ConcordProject\MIS\BOL\bin\Debug\BOL.pdb
+F:\Tushi2018\ConcordProject\MIS\BOL\obj\Debug\BOL.dll
+F:\Tushi2018\ConcordProject\MIS\BOL\obj\Debug\BOL.pdb
+F:\Tushi2018\ConcordProject\MIS\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+E:\Concord Work\ConcordProject\MIS\BOL\bin\Debug\BOL.dll
+E:\Concord Work\ConcordProject\MIS\BOL\bin\Debug\BOL.pdb
+E:\Concord Work\ConcordProject\MIS\BOL\obj\Debug\BOL.dll
+E:\Concord Work\ConcordProject\MIS\BOL\obj\Debug\BOL.pdb
+E:\Concord Work\ConcordProject\MIS\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\BOL\bin\Debug\BOL.dll
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\BOL\bin\Debug\BOL.pdb
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\BOL\obj\Debug\BOL.dll
+C:\Users\ENAMUL\Desktop\eMIS-17-11-2020\MIS\BOL\obj\Debug\BOL.pdb
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\BOL\bin\Debug\BOL.dll
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\BOL\bin\Debug\BOL.pdb
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\BOL\obj\Debug\BOL.dll
+D:\Office Project\eMIS-21-11-2020\eMIS-17-11-2020\MIS\BOL\obj\Debug\BOL.pdb
+D:\Office Project\MIS\BOL\bin\Debug\BOL.dll
+D:\Office Project\MIS\BOL\bin\Debug\BOL.pdb
+D:\Office Project\MIS\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+D:\Office Project\MIS\BOL\obj\Debug\BOL.dll
+D:\Office Project\MIS\BOL\obj\Debug\BOL.pdb
+D:\Office Project\MyERP\BOL\bin\Debug\BOL.dll
+D:\Office Project\MyERP\BOL\bin\Debug\BOL.pdb
+D:\Office Project\MyERP\BOL\obj\Debug\BOL.dll
+D:\Office Project\MyERP\BOL\obj\Debug\BOL.pdb
+D:\Office Project\djkhsdfkl\MyERP\BOL\bin\Debug\BOL.dll
+D:\Office Project\djkhsdfkl\MyERP\BOL\bin\Debug\BOL.pdb
+D:\Office Project\djkhsdfkl\MyERP\BOL\obj\Debug\BOL.dll
+D:\Office Project\djkhsdfkl\MyERP\BOL\obj\Debug\BOL.pdb
+D:\Office Project\NUCLEUS\BOL\bin\Debug\BOL.dll
+D:\Office Project\NUCLEUS\BOL\bin\Debug\BOL.pdb
+D:\Office Project\NUCLEUS\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\Office Project\NUCLEUS\BOL\obj\Debug\BOL.dll
+D:\Office Project\NUCLEUS\BOL\obj\Debug\BOL.pdb
+D:\office work\NUCLEUS\BOL\bin\Debug\BOL.dll
+D:\office work\NUCLEUS\BOL\bin\Debug\BOL.pdb
+D:\office work\NUCLEUS\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\office work\NUCLEUS\BOL\obj\Debug\BOL.dll
+D:\office work\NUCLEUS\BOL\obj\Debug\BOL.pdb
+D:\office work\NUCLEUS\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+D:\Final-2021-05-24\NUCLEUS\BOL\bin\Debug\BOL.dll
+D:\Final-2021-05-24\NUCLEUS\BOL\bin\Debug\BOL.pdb
+D:\Final-2021-05-24\NUCLEUS\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+D:\Final-2021-05-24\NUCLEUS\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\Final-2021-05-24\NUCLEUS\BOL\obj\Debug\BOL.dll
+D:\Final-2021-05-24\NUCLEUS\BOL\obj\Debug\BOL.pdb
+D:\Nucleus\NUCLEUS\BOL\bin\Debug\BOL.dll
+D:\Nucleus\NUCLEUS\BOL\bin\Debug\BOL.pdb
+D:\Nucleus\NUCLEUS\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\Nucleus\NUCLEUS\BOL\obj\Debug\BOL.dll
+D:\Nucleus\NUCLEUS\BOL\obj\Debug\BOL.pdb
+E:\Al-Amin\Concond Development\eSchool\eSchool\BOL\bin\Debug\BOL.dll
+E:\Al-Amin\Concond Development\eSchool\eSchool\BOL\bin\Debug\BOL.pdb
+E:\Al-Amin\Concond Development\eSchool\eSchool\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+E:\Al-Amin\Concond Development\eSchool\eSchool\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+E:\Al-Amin\Concond Development\eSchool\eSchool\BOL\obj\Debug\BOL.dll
+E:\Al-Amin\Concond Development\eSchool\eSchool\BOL\obj\Debug\BOL.pdb
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\BOL\bin\Debug\BOL.dll
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\BOL\bin\Debug\BOL.pdb
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\BOL\obj\Debug\BOL.dll
+D:\Al-Amin Concord Works\Development\Lawyers\RDMS\BOL\obj\Debug\BOL.pdb
+C:\Users\Al-Amin\Desktop\RDMS\BOL\bin\Debug\BOL.dll
+C:\Users\Al-Amin\Desktop\RDMS\BOL\bin\Debug\BOL.pdb
+C:\Users\Al-Amin\Desktop\RDMS\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\Al-Amin\Desktop\RDMS\BOL\obj\Debug\BOL.dll
+C:\Users\Al-Amin\Desktop\RDMS\BOL\obj\Debug\BOL.pdb
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\BOL\bin\Debug\BOL.dll
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\BOL\bin\Debug\BOL.pdb
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\BOL\obj\Debug\BOL.dll
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\BOL\obj\Debug\BOL.pdb
+C:\Users\User\Desktop\Concord _Internship\shahreen\RDMS\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache

@@ -1,0 +1,88 @@
+USE [ERPINVDB]
+GO
+/****** Object:  StoredProcedure [dbo].[SP_DROPDOWN_TARVSACH]    Script Date: 05-Jan-23 4:08:56 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- =============================================
+ALTER PROCEDURE [dbo].[SP_DROPDOWN_TARVSACH]
+	@ComC1 nvarchar(250)='',
+	@CallType nvarchar(250)='',
+	@Desc1 nvarchar(250)='',
+	@Desc2 nvarchar(250)='',
+	@Desc3 nvarchar(250)='',
+	@Desc4 nvarchar(250)='', 
+	@Desc5 nvarchar(250)='',
+	@Desc6 nvarchar(250)='',
+	@Desc7 nvarchar(250)='',
+	@Desc8 nvarchar(250)='', 
+	@Desc9 nvarchar(250)='', 
+	@Desc10 nvarchar(250)='',
+	@Desc11 nvarchar(250)='',
+	@Desc12 nvarchar(250)='',
+	@Desc13 nvarchar(250)='',
+	@Desc14 nvarchar(250)='',
+	@Desc15 nvarchar(250)='',
+	@Desc16 nvarchar(250)='',
+	@Desc17 nvarchar(250)='',
+	@Desc18 nvarchar(250)='',
+	@Desc19 nvarchar(250)='',
+	@Desc20 nvarchar(250)=''
+
+as
+begin
+set nocount on;
+
+if @CallType = 'SelectEmployeeID' goto Select_Employee_ID
+else if @CallType = 'SelectPermitteddYear' goto Select_Permitted_Year
+
+set @CallType = char(13) + 'Section "' + @CallType + '" not found to execute'
+raiserror(@CallType, 16, 1)
+return
+----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+Select_Employee_ID:
+ 	begin 
+	    select ID=HRCODE , [NAME] = HRCODE + '-' + HRNAME 
+		from [ERPHRDB].dbo.HRINF a
+		where HRCODE Like '%'+ @Desc1 + '%' or 
+		HRNAME Like '%'+ @Desc1 + '%'
+	    
+	end 
+	return 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Select_Permitted_Year:
+  begin
+  declare @start int  = 2020 
+
+while @start <=  format (getdate () , 'yyyy')
+   begin 
+	if (@start = 2020)
+		begin
+			select id = @start , [name] = @start
+			into #tbltempDate 
+			set @start= @start +1  ;
+		end
+	else 
+		begin
+			insert into  #tbltempDate (id ,[name])
+			values (@start ,@start) 
+			set  @start  = @start +1;
+		end
+   end ;
+
+   select * from #tbltempDate
+
+   drop table #tbltempDate
+
+
+  end 
+  return
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+end 
+  return 

@@ -1,0 +1,271 @@
+USE [ERPINVDB]
+GO
+/****** Object:  StoredProcedure [dbo].[SP_REPORT_TARVSACH]    Script Date: 05-Jan-23 4:10:48 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author Name : Shahreen Husne Rabbani
+-- Create date: 
+-- Description:	
+-- =============================================
+ALTER PROCEDURE  [dbo].[SP_REPORT_TARVSACH]
+	
+	@ComC1 nvarchar(250)='',
+	@CallType nvarchar(250)= '',
+	@Desc1 nvarchar(250)= '',
+	@Desc2 nvarchar(250)= '',
+	@Desc3 nvarchar(250)= '',
+	@Desc4 nvarchar(250)= '', 
+	@Desc5 nvarchar(250)= '',
+	@Desc6 nvarchar(250)= '',
+	@Desc7 nvarchar(250)= '',
+	@Desc8 nvarchar(250)= '', 
+	@Desc9 nvarchar(250)= '', 
+	@Desc10 nvarchar(250)= '',
+	@Desc11 nvarchar(250)= '',
+	@Desc12 nvarchar(250)= '',
+	@Desc13 nvarchar(250)= '',
+	@Desc14 nvarchar(250)='',
+	@Desc15 nvarchar(250)='',
+	@Desc16 nvarchar(250)='',
+	@Desc17 nvarchar(250)='',
+	@Desc18 nvarchar(250)='',
+	@Desc19 nvarchar(250)='',
+	@Desc20 nvarchar(250)=''
+	AS
+	begin
+		-- SET NOCOUNT ON added to prevent extra result sets from
+		-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	 if @CallType = 'GetTarVsAchReport' goto Get_TarVsAch_Report  
+
+	
+ 
+	 return 
+  --==================================================================================================
+
+	
+    --==================================================================================================
+	Get_TarVsAch_Report:
+	 begin 
+	 select a.COMCNAM , a.COMCADD1 from [dbo].[COMCONTINF_V] a
+     where  left (a.COMCID ,6) like left(@Desc1, 6)
+
+	 create table #tblTarVSAch(    EmployeeID [nvarchar](12) , 
+									Jan_Tar  [decimal](18, 2) ,
+									Jan_Ach [decimal](18, 2)  ,
+									Feb_Tar   [decimal](18, 2),
+									Feb_Ach [decimal](18, 2),
+									Mar_Tar  [decimal](18, 2) ,
+									Mar_Ach [decimal](18, 2)  ,
+									Apr_Tar  [decimal](18, 2) ,
+									Apr_Ach [decimal](18, 2)  ,
+									May_Tar  [decimal](18, 2) ,
+									May_Ach [decimal](18, 2)  ,
+									June_Tar  [decimal](18, 2) ,
+									June_Ach [decimal](18, 2)  ,
+									July_Tar  [decimal](18, 2) ,
+									July_Ach [decimal](18, 2)  ,
+									Aug_Tar  [decimal](18, 2) ,
+									Aug_Ach [decimal](18, 2)  ,
+									Sep_Tar  [decimal](18, 2) ,
+									Sep_Ach [decimal](18, 2)  ,
+									Oct_Tar  [decimal](18, 2) ,
+									Oct_Ach [decimal](18, 2)  ,
+									Nov_Tar  [decimal](18, 2) ,
+									Nov_Ach [decimal](18, 2)  ,
+									Dec_Tar  [decimal](18, 2) ,
+									Dec_Ach [decimal](18, 2)  
+									)
+	
+	
+	
+		select a.DONUM, a.CHDAT, b.SUBCODE, b.QNTY, COMCID = left(a.CHNUM,4)
+		into #tblTemp01
+		from  [dbo].[CHINFB] a
+		inner join CHINFA b on a.CHNUM = b.CHNUM
+		where a.CHDAT between '01-Jan-' + @Desc2 and '31-Dec-' + @Desc2 and left(a.CHNUM, 4) like left(@Desc1, 4)
+	   -------select * from #tblTemp01
+
+
+		select b.SALESPERSON,  a.DONUM, a.SUBCODE, MMYY = format(a.CHDAT, 'MMM-yy'), MM = format(a.CHDAT, 'MM'), a.QNTY, a.COMCID, 
+		DORATE = c.DOAMT / c.DOQTY
+		into #tblTemp02
+		from #tblTemp01 a
+		inner join DOINFB b on a.DONUM = b.DONUM 
+		inner join DOINFA c on a.DONUM = c.DONUM and a.SUBCODE = c.SUBCODE
+		--select * from #tblTemp02 
+
+		select d.SALESPERSON, d.MMYY, d.MM, d.COMCID, 
+		AMOUNT =  SUM(d.QNTY * d.DORATE) 
+		into #tblAmount
+		from #tblTemp02  d 
+		where  d.SALESPERSON like   '%' + isnull(@Desc3,'') + '%' 
+		group by d.SALESPERSON, d.MMYY, d.MM , d.COMCID
+		-----select * from #tblAmount  
+
+		select a.HRCODE, MMYY = format(a.TRGDAT, 'MMM-yy'), MM = format(a.TRGDAT, 'MM'), a.TRGCRAMT, COMCID= left (b.COMCID ,4)
+		into #tblTarget
+		from SALESTARGET a 
+		inner join [dbo].[COMCONTINF_V] b on a.COMCID = b.COMCID
+		where  left (a.COMCID ,4) like left(@Desc1, 4)
+		and a.TRGDAT between '01-Jan-' + @Desc2 and '31-Dec-' + @Desc2
+		and   a.HRCODE like   '%' + isnull(@Desc3,'') + '%'  
+		--select * from #tblTarget 
+
+		select c.SALESPERSON , c.MMYY, c.MM, COMCID,SalesAmt = sum(SalesAmt), TRGCRAMT = sum(TRGCRAMT)  
+		into #tblTemp03
+		from(
+			select a.SALESPERSON, a.MMYY, a.MM, COMCID, SalesAmt = CAST(a.AMOUNT AS decimal(18,2)), TRGCRAMT = 0.00
+			from #tblAmount a
+
+			union all
+
+			select b.HRCODE, b.MMYY, b.MM, b.COMCID, SalesAmt = 0, b.TRGCRAMT
+			from #tblTarget b
+		)  c
+		group by c.SALESPERSON, c.MMYY, c.MM, c.COMCID
+		---select * from #tblTemp03
+
+		declare @counter int = 1 ;
+
+		while @counter <=12 
+			begin
+  
+			if @counter = 1
+			begin
+				insert into #tblTarVSAch (EmployeeID , Jan_Tar, Jan_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+			set   @counter =  @counter + 1 
+				end 
+			else if @counter = 2
+			begin
+				insert into #tblTarVSAch (EmployeeID , Feb_Tar , Feb_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 3
+			begin
+				insert into #tblTarVSAch (EmployeeID , Mar_Tar , Mar_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 4
+			begin
+				insert into #tblTarVSAch (EmployeeID , Apr_Tar , Apr_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 5
+			begin
+				insert into #tblTarVSAch (EmployeeID , May_Tar , May_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 6
+			begin
+				insert into #tblTarVSAch (EmployeeID , June_Tar , June_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 7
+			begin
+				insert into #tblTarVSAch (EmployeeID , July_Tar , July_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 8
+			begin
+				insert into #tblTarVSAch (EmployeeID , Aug_Tar , Aug_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 9
+			begin
+				insert into #tblTarVSAch (EmployeeID , Sep_Tar , Sep_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 10
+			begin
+				insert into #tblTarVSAch (EmployeeID , Oct_Tar , Oct_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 11
+			begin
+				insert into #tblTarVSAch (EmployeeID , Nov_Tar , Nov_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+			else if @counter = 12
+			begin
+				insert into #tblTarVSAch (EmployeeID , Dec_Tar , Dec_Ach )
+				select a.SALESPERSON, a.TRGCRAMT, a.SalesAmt  
+				from #tblTemp03 a
+				where cast(a.MM as int) = @counter
+				set   @counter =  @counter + 1 
+			end
+	 
+			end
+
+			select  b.HRNAME,  b.HRDESIG, 
+			JanTar= sum (a.Jan_Tar ), JanAch = sum(a.Jan_Ach) , FebTar = sum(a.Feb_Tar), FebAch = sum(a.Feb_Ach)  ,
+			MarTar= sum (a.Mar_Tar ), MarAch = sum(a.Mar_Ach) , AprTar = sum(a.Apr_Tar), AprAch = sum(a.Apr_Ach)  ,
+			MayTar= sum (a.May_Tar ), MayAch = sum(a.May_Ach) , JunTar = sum(a.June_Tar), JunAch = sum(a.June_Ach) ,
+			JulTar= sum (a.July_Tar ), JulAch = sum(a.July_Ach) , AugTar = sum(a.Aug_Tar), AugAch = sum(a.Aug_Ach)  ,
+			SepTar= sum (a.Sep_Tar ), SepAch = sum(a.Sep_Ach) , OctTar = sum(a.Oct_Tar), OctAch = sum(a.Oct_Ach)  ,
+			NovTar= sum (a.Nov_Tar ), NovAch = sum(a.Nov_Ach) , DecTar = sum(a.Dec_Tar), DecAch = sum(a.Dec_Ach) ,
+			 b.HRCODE
+			from #tblTarVSAch a
+			inner join  ERPHRDB.dbo.HRINF b on a.EmployeeID = b.HRCODE
+			group by   b.HRCODE ,b.HRNAME , b.HRDESIG
+
+
+	
+			drop table #tblTemp01
+			drop table #tblTemp02
+			drop table #tblAmount
+			drop table #tblTarget
+			drop table #tblTemp03
+			drop table #tblTarVSAch
+
+
+		end 
+		return 
+    --=================================================================================================
+	 
+
+	--==================================================================================================
+end
+ return 
+ select  a.HRCODE , a.HRNAME , a.HRDESIG from ERPHRDB.dbo.HRINF a
+	where  a.HRCODE  Like '%'+ @Desc4 + '%'
+   dd-MMM-yyyy
+
+string fdate = new DateTime(Convert.ToDateTime(objDetails.Month.Trim()).Year, Convert.ToDateTime(objDetails.Month.Trim()).Month, 1).ToString("dd-MMM-yyyy ");
+            string tdate = Convert.ToDateTime(objDetails.Month).AddMonths(1).AddDays(-1).ToString("dd-MMM-yyyy ");
